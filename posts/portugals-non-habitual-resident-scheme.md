@@ -1,0 +1,12 @@
+---
+title: 'Portugal''s Non-Habitual Resident Scheme'
+tags: 
+- Business
+- income tax Portugal
+- non-habitual resident scheme
+- pensions
+- Retirement
+- retiring to Portugal
+---
+
+**Portugal's _non-habitual resident scheme_ aims to attract people to the country, to work or retire, by making it beneficial from a tax perspective to become tax resident in Portugal.** The scheme is available to individuals who become tax resident in Portugal (providing they have not been Portuguese tax residents in the previous 5 years). The status is granted for a period of 10 consecutive years. During this period personal income tax on earnings in Portugal is at a fixed rate of 20%. There is **no** double taxation for pensions or for employment and self-employment income obtained abroad. To be considered as a tax resident, you must stay for more than 183 days in Portugal during the relevant tax year or have a home in Portugal at 31 December of that year with the intention of keeping it as your normal base. In return _non-habitual residents_ will be subject to a reduced 20% Portuguese income tax rate both on salaries and business and professional income of a Portuguese source arising from high added value activities of a scientific, artistic or technical nature. Examples of high value added activities are architects, doctors, university teachers, designers, IT technicians, engineers, researchers, liberal professions, investors and managers under certain conditions. Rental income, investment income and capital gains of a non Portuguese source obtained by non habitual residents are also Portuguese income tax exempt. Foreign pensions meeting the criteria will not be taxed in Portugal. In addition, the tax treaty between the source country and Portugal may preclude that country from taxing the pension, resulting in potential double non-taxation. More Information: [http://observador.pt/2016/03/09/5-000-estrangeiros-vieram-viver-portugal-busca-vantagens-fiscais/](http://observador.pt/2016/03/09/5-000-estrangeiros-vieram-viver-portugal-busca-vantagens-fiscais/) [http://www.telegraph.co.uk/finance/personalfinance/special-reports/11519095/The-ultimate-pension-freedom-Retire-in-Portugal-and-reduce-your-tax.html](http://www.telegraph.co.uk/finance/personalfinance/special-reports/11519095/The-ultimate-pension-freedom-Retire-in-Portugal-and-reduce-your-tax.html) [http://www.livinginportugal.com/en/moving-to-portugal/tax-regime-for-non-habitual-residents/](http://www.livinginportugal.com/en/moving-to-portugal/tax-regime-for-non-habitual-residents/)
