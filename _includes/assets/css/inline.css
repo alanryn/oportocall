@@ -1,5 +1,5 @@
 :root {
-	--primary: blue;
+	--primary: black;
 	--secondary: white;
 	--background: #FFF0EB;
 }
@@ -19,11 +19,12 @@ body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
-	background-color: var(--background);
+	background-color: var(--secondary);
 }
 
 main {
-	max-width: 37.5em;
+	max-width: 60em;
+	margin: 0 auto;
 }
 
 p,
@@ -53,7 +54,7 @@ main {
 
 main :first-child,
 main > article :first-child {
-	margin-top: 0;
+	
 }
 
 pre {
@@ -74,6 +75,10 @@ pre {
 }
 
 /* Header Logo (style as h2) */
+header{
+		
+}
+
 header > em {
 	display: block;
 	font-size: 2em;
@@ -112,15 +117,11 @@ header nav li a[data-current="current item"] {
 
 /* Posts List */
 article {
-	margin-bottom: 1em;
-	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
-	border-bottom: 1px solid var(--secondary);
+	
 }
 
 main > section > article > * {
-	margin-top: 0;
-	margin-bottom: .5em;
+	
 }
 
 /* Post Tags */
@@ -134,8 +135,8 @@ a[rel="tag"]:visited {
   padding: 0 .5em;
 	line-height: 2em;
 	height: 2em;
-  border: 1px solid var(--secondary);
-	background-color: var(--secondary);
+  border: 1px solid var(--background);
+	background-color: var(--background);
 	color: var(--primary);
   border-radius: .25em;
   text-decoration: none;
@@ -145,7 +146,7 @@ a[rel="tag"]:visited {
 a[rel="tag"]:hover {
 	border: 1px solid var(--primary);
 	background-color: var(--primary);
-	color: var(--secondary);
+	color: var(--background);
 }
 
 a[rel="tag"]:last-child {
@@ -159,7 +160,7 @@ form {
 }
 
 form label {
-  display: none;
+ 
 }
 
 input,
@@ -188,4 +189,19 @@ button {
 	:root {
 		font-size: 1.1rem;
 	}
+}
+.card-wrapper{
+	display: grid; 
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-gap: 1rem;
+	}
+
+.card {
+  background-color: var(--background);
+  border: 3px solid var(--primary);
+  padding: 0 1em;
+
+}
+.card:hover {
+    box-shadow: 0 0 0 5px gray;
 }
