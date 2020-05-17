@@ -1,6 +1,8 @@
 ---
 title: Portuguese Language Lesson
 summary: Language class with native qualified teacher
+serviceId: "3"
+price: 10
 tags: 
 - Language
 - Portuguese

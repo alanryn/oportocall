@@ -9,16 +9,15 @@ section: post
 
   {{ layoutContent | safe }}
 
-  {% if tags %}
-    <p>
-    {% for tag in tags %}
-      {%- if tag != "service" -%}
-        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
-    </p>
-  {% endif %}
+  <button class="snipcart-add-item button" 
+          data-item-id="11ty-{{page.fileSlug}}"
+          data-item-name="{{ title }}" 
+          data-item-price="{{ price }}"
+          data-item-url="{{ service.url }}"
+    data-item-image=""
+          data-item-description="{{ service.data.body }}">
+          Add to cart
+  </button>
 
 </article>
 

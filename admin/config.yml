@@ -32,6 +32,7 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "ServiceId", name: "serviceId", widget: "string" }
    # About panels
   - name: "about" # Used in routes, e.g., /admin/collections/services
     label: "About" # Used in the UI

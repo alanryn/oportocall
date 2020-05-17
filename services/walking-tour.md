@@ -1,6 +1,8 @@
 ---
 title: Walking tour of Porto
 summary: Customized private tour of the city
+serviceId: "4"
+price: 20
 tags:
 - Tour
 - Porto

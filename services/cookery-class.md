@@ -1,6 +1,8 @@
 ---
 title: Cookery Class
 summary: Traditional Portuguese cooking
+serviceId: "1"
+price: 10
 tags: 
 - Food
 - Local Cuisine

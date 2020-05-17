@@ -1,6 +1,8 @@
 ---
 title: Dog walking / Pet Sitting
 summary: Dog walking by appointment
+serviceId: "2"
+price: 10
 tags: 
 - Dogs
 - Pets
