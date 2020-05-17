@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+section: post
+---
+
+<article>
+  <h1>{{ title }}</h1>
+
+
+  {{ layoutContent | safe }}
+
+  {% if tags %}
+    <p>
+    {% for tag in tags %}
+      {%- if tag != "service" -%}
+        {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+      {%- endif -%}
+    {% endfor %}
+    </p>
+  {% endif %}
+
+</article>
+
+<nav>
+  <a href="{{ '/services/' | url }}">← Back to service list</a>
+</nav>

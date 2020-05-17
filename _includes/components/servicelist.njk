@@ -1,0 +1,13 @@
+<div class="card-wrapper">
+
+	{% for service in servicelist | reverse %}
+
+		<div class="card" {% if service.url == url %} data-current="current item"{% endif %}>
+			<a href="{{ service.url | url }}">
+				<h3>{{ service.data.title }}</h3>	
+				<h4>{{ service.data.summary }}</h4>	
+			</a>
+		</div>
+		
+	{% endfor %}
+</div>

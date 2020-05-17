@@ -190,6 +190,7 @@ button {
 		font-size: 1.1rem;
 	}
 }
+
 .card-wrapper{
 	display: grid; 
 	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -205,3 +206,13 @@ button {
 .card:hover {
     box-shadow: 0 0 0 5px gray;
 }
+/*
+.site {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(123, 131, 126, 0.9) 0%, rgba(54, 75, 73, 0.9) 100%), #364b49;
+  background-repeat: no-repeat;
+  color: #FFF;
+  min-height: 100vh; /* allows room for scrolling to see parallax 
+  height: 100%;
+}
+
+*/

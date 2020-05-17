@@ -2,7 +2,6 @@
 
 	{% for post in postslist | reverse %}
 
-	
 		<div class="card" {% if post.url == url %} data-current="current item"{% endif %}>
 			<h3>
 				<a href="{{ post.url | url }}">
