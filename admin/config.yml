@@ -20,7 +20,8 @@ collections:
       - { label: "Summary", name: "summary", widget: "text" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Body", name: "body", widget: "markdown" }
-  # Our services
+      - { label: "Image", name: "featuredImage", widget: "image" }
+   # Our services
   - name: "services" # Used in routes, e.g., /admin/collections/services
     label: "Service" # Used in the UI
     folder: "services" # The path to the folder where the documents are stored

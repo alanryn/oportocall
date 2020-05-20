@@ -31,5 +31,7 @@
     "markdown-it-anchor": "^5.3.0",
     "uglify-es": "^3.3.9"
   },
-  "dependencies": {}
+  "dependencies": {
+    "eleventy-plugin-respimg": "^0.1.2"
+  }
 }

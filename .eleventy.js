@@ -4,9 +4,18 @@ const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
 const slugify = require("slugify");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const pluginRespimg = require( "eleventy-plugin-respimg" );
 
 module.exports = function(eleventyConfig) {
+    eleventyConfig.cloudinaryCloudName = 'djd5xu1es';
+    eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
+    eleventyConfig.fallbackWidth = 640;
 
+
+    eleventyConfig.addPlugin( pluginRespimg );
+   
+  eleventyConfig.addPassthroughCopy('img')
+  eleventyConfig.addPassthroughCopy('admin')
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 

@@ -5,9 +5,9 @@
 
 	<body class="site">
 
-		<header>
+		<header style="text-align: center;">
 			<em>
-				<a href="{{ '/' | url }}">Porto Relocation Services</a>
+				<a class= "gradient-text" href="{{ '/' | url }}">Porto Relocation Services</a>
 			</em>
 			{% include "components/nav.njk" %}
 		</header>
@@ -21,3 +21,27 @@
 	</body>
 
 </html>
+
+<style type="text/css">
+.gradient-text {
+ font-size: 2em;
+  /* Fallback: Set a background color. */
+  background-color: #082136;
+  
+  /* Create the gradient. */
+    
+    background-image: linear-gradient(45deg, #082136, #8cc9ff);
+    background-image: conic-gradient(45deg, #082136, #8cc9ff);
+
+  
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+</style>
