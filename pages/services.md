@@ -5,5 +5,5 @@ date: 2020-01-01T00:00:00.000Z
 permalink: /services/index.html
 eleventyNavigation:
   key: Services
-  order: 2
+  order: 1
 ---

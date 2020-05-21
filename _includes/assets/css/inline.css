@@ -42,7 +42,6 @@ a[href]:not(:hover) {
 	text-decoration: none;
 }
 
-header,
 main,
 footer {
 	padding: 1em;
@@ -78,10 +77,6 @@ pre {
 }
 
 /* Header Logo (style as h2) */
-header{
-		
-}
-
 header > em {
 	display: block;
 	font-size: 2em;
@@ -90,33 +85,6 @@ header > em {
 	font-style: normal;
 }
 
-/* Header Nav */
-header nav ul {
-	padding: 0;
-	list-style: none;
-}
-
-header nav ul :first-child {
-	margin-left: 0;
-}
-
-header nav li {
-	display: inline-block;
-	margin: 0 .25em;
-}
-
-header nav li a {
-	padding: .25em .5em;
-	border-radius: .25em;
-}
-
-header nav li a[href]:not(:hover) {
-	text-decoration: none;
-}
-
-header nav li a[data-current="current item"] {
-	background-color: white;
-}
 
 /* Posts List */
 article {
@@ -231,6 +199,7 @@ button {
   -webkit-text-fill-color: transparent; 
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
 /*
 .site {
   background: radial-gradient(50% 50% at 50% 50%, rgba(123, 131, 126, 0.9) 0%, rgba(54, 75, 73, 0.9) 100%), #364b49;
@@ -241,3 +210,77 @@ button {
 }
 
 */
+
+/* nav menu */
+nav {
+  background-color: #fff;
+  padding: 0 1rem;
+  display: grid;
+  place-items: center;
+}
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+}
+nav > ul > li > ul {
+  padding: 0;
+  margin: 0 0.5rem;
+  list-style: none;
+}
+
+nav > ul > li a,
+nav > ul > li .dropdown__title {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+ 
+  font-size: 1.125rem;
+}
+nav > ul > li > a,
+nav > ul > li .dropdown__title {
+  padding: 1rem 0.5rem;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown:hover .dropdown__menu,
+.dropdown:focus-within .dropdown__menu {
+  opacity: 1;
+  transform: rotateX(0) translateX(-50%);
+}
+.dropdown .dropdown__menu {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.25);
+  padding: 0.5em 0;
+  min-width: 15ch;
+  top: calc(100% - 0.25rem);
+  left: 50%;
+  transform: rotateX(-90deg) translateX(-50%);
+  transform-origin: top center;
+  opacity: 0.3;
+  transition: 280ms all 280ms ease-out;
+}
+.dropdown .dropdown__menu a {
+  color: #444;
+  display: block;
+  padding: 0.5em;
+}
+.dropdown .dropdown__title {
+  display: inline-flex;
+  align-items: center;
+  pointer-events: none;
+}
+.dropdown .dropdown__title:after {
+  content: "";
+  border: 0.35rem solid transparent;
+  border-top-color: rgba(0, 0, 255, 0.45);
+  margin-left: 0.25em;
+  transform: translateY(0.15em);
+}
+

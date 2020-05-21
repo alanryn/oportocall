@@ -1,10 +1,23 @@
-<nav>
-  {% set navPages = collections.all | eleventyNavigation %}
-  <ul>
-  {%- for entry in navPages %}
-    <li>
-      <a href="{{ entry.url | url }}"{% if entry.url == page.url %} data-current="current item"{% endif %}>{{ entry.title }}</a>
-    </li>
-  {%- endfor %}
-  </ul>
+<nav aria-label="Main Navigation">
+{% set navPages = collections.all | eleventyNavigation %}
+
+<ul>
+{%- for entry in navPages -%}
+	{%- if entry.children.length -%}
+	<li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">{{ entry.title }}</span>
+		  <ul class="dropdown__menu" aria-labelledby="dropdown-title">
+			  <li style="text-align:center">
+			    {%- for child in entry.children %}<a href="{{ child.url | url }}">{{ child.title }}</a>{% endfor -%}
+			  </li>
+		  </ul>
+  	</li>
+   {%- else -%}
+		 <li class="dropdown">
+		  <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+		 </li>
+
+	{%- endif -%}
+{%- endfor -%}
+</ul>
+
 </nav>
