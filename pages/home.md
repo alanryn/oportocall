@@ -22,16 +22,16 @@ Are you already living in Porto but still need help with everyday things?
 Maybe you have a lack of time; the language is still a barrier; you have no reliable contacts; or a limited budget.
 
 We can help with:
-
-* house-sitting
-* gardening
-* cleaning
-* shopping
-* decoration
-* pet care
-* odd jobs
-* or just some general advice
-
+<ul>
+<li data-icon="🦄">house-sitting</li>
+<li data-icon="🦄">gardening</li>
+<li data-icon="🦄">cleaning</li>
+<li data-icon="🦄">shopping</li>
+<li data-icon="🦄">decoration</li>
+<li data-icon="🦄">pet care</li>
+<li data-icon="🦄">odd jobs</li>
+<li data-icon="🦄">or just some general advice<li>
+</ul>
 You tell us what you need and we will offer you a solution.
 
 ## Relocating?
@@ -40,15 +40,15 @@ Are you planning to relocate to Porto; to work, retire, study, or just to experi
 We can offer you a comprehensive guide to settling in to your new environment, and a reliable contact on the ground.
 
 Including
-
-* where to live
-* cost of living/salaries/job opportunities
-* bureaucracy: utilities, taxes, residency, etc
-* reliable contacts: services, doctors, builders, lawyers etc
-* translations
-* interests, hobbies, social life, sports
-* language and culture
-
+<ol>
+<li>where to live</li>
+<li>cost of living/salaries/job opportunities</li>
+<li>bureaucracy: utilities, taxes, residency, etc</li>
+<li>reliable contacts: services, doctors, builders, lawyers etc</li>
+<li>translations</li>
+<li> interests, hobbies, social life, sports</li>
+<li>language and culture</li>
+</ol>
 And anything else that interests you …
 
 [Contact us](/contact) for more information.
