@@ -29,6 +29,11 @@ main {
 	margin: 0 auto;
 }
 
+main > form {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
 p,
 pre,
 code {
@@ -87,16 +92,6 @@ header > em {
 	font-style: normal;
 }
 
-
-/* Posts List */
-article {
-	
-}
-
-main > section > article > * {
-	
-}
-
 /* Post Tags */
 a[rel="tag"],
 a[rel="tag"]:visited {
@@ -130,10 +125,6 @@ a[rel="tag"]:last-child {
 form {
   display: grid;
 	padding: 2em 0;
-}
-
-form label {
- 
 }
 
 input,
