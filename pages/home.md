@@ -22,14 +22,17 @@ Are you already living in Porto but still need help with everyday things?
 Maybe you have a lack of time; the language is still a barrier; you have no reliable contacts; or a limited budget.
 
 We can help with:
-* house-sitting
-* gardening
-* cleaning
-* shopping
-* decoration
-* pet care
-* odd jobs
-* or just some general advice
+
+<ul role="list">
+  <li data-icon="&#10004;">house-sitting</li>
+  <li data-icon="&#10004;">gardening</li>
+  <li data-icon="&#10004;">cleaning</li>
+  <li data-icon="&#10004;">shopping</li>
+  <li data-icon="&#10004;">decoration</li>
+  <li data-icon="&#10004;">pet care</li>
+  <li data-icon="&#10004;">odd jobs</li>
+  <li data-icon="&#10004;">or just some general advice</li>
+</ul>
 
 You tell us what you need and we will offer you a solution.
 
@@ -40,13 +43,15 @@ We can offer you a comprehensive guide to settling in to your new environment, a
 
 Including
 
-* where to live
-* cost of living/salaries/job opportunities
-* bureaucracy: utilities, taxes, residency, etc
-* reliable contacts: services, doctors, builders, lawyers etc
-* translations
-* interests, hobbies, social life, sports
-* language and culture
+<ul role="list">
+<li data-icon="&#10004;"> where to live</li>
+<li data-icon="&#10004;">cost of living/salaries/job opportunities</li>
+<li data-icon="&#10004;">bureaucracy: utilities, taxes, residency, etc</li>
+<li data-icon="&#10004;">reliable contacts: services, doctors, builders, lawyers etc</li>
+<li data-icon="&#10004;">translations</li>
+<li data-icon="&#10004;">interests, hobbies, social life, sports</li>
+<li data-icon="&#10004;">language and culture</li>
+</ul>
 
 And anything else that interests you …
 
@@ -61,10 +66,12 @@ You tell us what interests you, how much time you have, your budget, and any spe
 
 We can provide information on:
 
-* special areas of interest
-* guided tours
-* language lessons, surfing, golf, etc.
-* Portuguese culture, food and wine
+<ul role="list">
+<li data-icon="&#10004;">special areas of interest</li>
+<li data-icon="&#10004;">guided tours</li>
+<li data-icon="&#10004;">language lessons, surfing, golf, etc.</li>
+<li data-icon="&#10004;">Portuguese culture, food and wine</li>
+</ul>
 
 and much more…
 
