@@ -12,10 +12,6 @@ tags:
   - Porto
   - Viveiro Municipal
 ---
-{% respimg
-  "https://res.cloudinary.com/djd5xu1es/image/upload/v1589812711/saltportugal_tlyrh4.jpg",
-  "Me, as Mister Potato Head"
- %}
 
 *If you have a garden, we have a tree for you*, is the theme of a new initiative in the Porto area. In the next 5 years more than 10,000 native trees and shrubs will be planted in gardens and private grounds around the city. The trees are being produced in the Municipal Nursery as part of a bigger project which itself is attempting to plant 100,000 new trees in the Porto metropolitan area. 
 

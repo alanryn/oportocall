@@ -2,20 +2,10 @@ const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
 const htmlmin = require("html-minifier");
-const slugify = require("slugify");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
-const pluginRespimg = require( "eleventy-plugin-respimg" );
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.cloudinaryCloudName = 'djd5xu1es';
-    eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
-    eleventyConfig.fallbackWidth = 640;
 
-
-    eleventyConfig.addPlugin( pluginRespimg );
-   
-  eleventyConfig.addPassthroughCopy('img')
-  eleventyConfig.addPassthroughCopy('admin')
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
@@ -28,6 +18,24 @@ module.exports = function(eleventyConfig) {
   // Merge data instead of overriding
   // https://www.11ty.dev/docs/data-deep-merge/
   eleventyConfig.setDataDeepMerge(true);
+
+  // Add support for maintenance-free post authors
+  // Adds an authors collection using the author key in our post frontmatter
+  // Thanks to @pdehaan: https://github.com/pdehaan
+  eleventyConfig.addCollection("authors", collection => {
+    const blogs = collection.getFilteredByGlob("posts/*.md");
+    return blogs.reduce((coll, post) => {
+      const author = post.data.author;
+      if (!author) {
+        return coll;
+      }
+      if (!coll.hasOwnProperty(author)) {
+        coll[author] = [];
+      }
+      coll[author].push(post.data);
+      return coll;
+    }, {});
+  });
 
   // Date formatting (human readable)
   eleventyConfig.addFilter("readableDate", dateObj => {
@@ -65,15 +73,6 @@ module.exports = function(eleventyConfig) {
       return minified;
     }
     return content;
-  });
-
-  // Universal slug filter strips unsafe chars from URLs
-  eleventyConfig.addFilter("slugify", function(str) {
-    return slugify(str, {
-      lower: true,
-      replacement: "-",
-      remove: /[*+~.·,()'"`´%!?¿:@]/g
-    });
   });
 
   // Don't process folders with static assets e.g. images
@@ -118,3 +117,4 @@ module.exports = function(eleventyConfig) {
     }
   };
 };
+
