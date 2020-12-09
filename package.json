@@ -4,8 +4,8 @@
   "description": "An Eleventy static site.",
   "scripts": {
     "build": "npx @11ty/eleventy",
-    "watch": "npx eleventy --watch",
-    "debug": "DEBUG=* npx eleventy"
+    "watch": "npx @11ty/eleventy --watch",
+    "debug": "DEBUG=* npx @11ty/eleventy "
   },
   "repository": {
     "type": "git",
