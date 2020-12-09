@@ -3,7 +3,7 @@
   "version": "1",
   "description": "An Eleventy static site.",
   "scripts": {
-    "build": "npx eleventy",
+    "build": "npx @11ty/eleventy",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
