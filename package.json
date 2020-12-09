@@ -21,7 +21,6 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "clean-css": "^4.2.3",
     "html-minifier": "^4.0.0",
-    "luxon": "^1.22.2",
     "markdown-it": "^10.0.0",
     "markdown-it-anchor": "^5.3.0",
     "uglify-es": "^3.3.9"
@@ -29,6 +28,7 @@
   "dependencies": {
     "@barba/core": "^2.9.7",
     "@barba/css": "^2.1.15",
-    "eleventy-plugin-respimg": "^0.1.2"
+    "eleventy-plugin-respimg": "^0.1.2",
+    "luxon": "^1.25.0"
   }
 }
