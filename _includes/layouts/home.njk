@@ -3,5 +3,160 @@ layout: layouts/base.njk
 section: home
 ---
 <div style="color:black">
+<div class="hero">Relocation and Tourist Services in the City of Porto and beyond</div>
+<div class="content">
+  <p>If you are planning a trip, moving to a new place or just need some practical information on your new location, the amount of options can be daunting. It is true that too much choice can be a bad thing. Everyone seems to have the answer but who do you trust and who can really understand your needs.</p>
+  <p>That’s why our service is based on a personal relationship, one where we separate the good from the mediocre, while you can sit back, relax and concentrate on the important things.
+  </p>
+  <p>And that’s why we offer customized advice for tourists, retirees, new arrivals, long term residents, students, workers, whoever you are, we can help you quickly accomplish your goals and make your life run a little smoother.</p>
+  <p>And that’s no bad thing.</p>
+</div>
+
+<div class="banner">
+  <div class="background tram-pic"></div>
+  <div class="foreground">
+    <h1>Already here?</h1>
+    <h2>33k miles</h2>
+  </div>
+</div>
+<div class="content">
+  <p>Are you already living in Porto but still need help with everyday things?
+    Maybe you have a lack of time; the language is still a barrier; you have no reliable contacts; or a limited budget.</p>
+  <p>We can help with:
+  </p>
+  <ul id="ul1" role="list">
+    <li id="li1" data-icon="&#10004;">house-sitting</li>
+    <li id="li1" data-icon="&#10004;">gardening</li>
+    <li id="li1" data-icon="&#10004;">cleaning</li>
+    <li id="li1" data-icon="&#10004;">shopping</li>
+    <li id="li1" data-icon="&#10004;">decoration</li>
+    <li id="li1" data-icon="&#10004;">pet care</li>
+    <li id="li1" data-icon="&#10004;">odd jobs</li>
+    <li id="li1" data-icon="&#10004;">or just some general advice</li>
+  </ul>
+  <p>
+    You tell us what you need and we will offer you a solution.
+  </p>
+</div>
+
+<div class="banner">
+  <div class="background tram-pic"></div>
+  <div class="foreground">
+    <h1>Relocating?</h1>
+    <h2>253k miles</h2>
+  </div>
+</div>
+<div class="content">
+  <p>Are you planning to relocate to Porto; to work, retire, study, or just to experience a new culture?</p>
+  <p>We can offer you a comprehensive guide to settling in to your new environment, and a reliable contact on the ground.
+  </p>
+  <p>Including:</p>
+  <ul id="ul2" role="list">
+    <li id="li2" data-icon="&#10004;">where to live</li>
+    <li id="li2" data-icon="&#10004;">cost of living/salaries/job opportunities</li>
+    <li id="li2" data-icon="&#10004;">bureaucracy: utilities, taxes, residency, etc</li>
+    <li id="li2" data-icon="&#10004;">reliable contacts: services, doctors, builders, lawyers etc</li>
+    <li id="li2" data-icon="&#10004;">translations</li>
+    <li id="li2" data-icon="&#10004;">interests, hobbies, social life, sports</li>
+    <li id="li2" data-icon="&#10004;">language and culture</li>
+  </ul>
+  <p>
+    And anything else that interests you …
+  </p>
+  <p>
+    Contact us for more information.
+  </p>
+</div>
+
+<div class="banner">
+  <div class="background tram-pic"></div>
+  <div class="foreground">
+    <h1>Planning a visit?</h1>
+    <h2>86k miles</h2>
+  </div>
+</div>
+<div class="content">
+  <p>If you are planning a visit to Porto and would like a customized travel guide with all the local knowledge and, if required, a contact to meet on arrival, then this service could be for you.</p>
+  <p>This way you can concentrate on getting the most from your trip while eliminating much of the stress and confusion of visiting a new place.
+  </p>
+  <p>You tell us what interests you, how much time you have, your budget, and any special requirements and we will provide you with everything you need to know.</p>
+  <p>We can provide information on:</p>
+  <ul id="ul3" role="list">
+    <li id="li3" data-icon="&#10004;">special areas of interest</li>
+    <li id="li3" data-icon="&#10004;">guided tours</li>
+    <li id="li3" data-icon="&#10004;">language lessons, surfing, golf, etc.</li>
+    <li id="li3" data-icon="&#10004;">Portuguese culture, food and wine</li>
+  </ul>
+  <p>and much more…</p>
+  <p>Contact us and let us know what you need</p>
+</div>
+
 {{ layoutContent | safe }}
 </div>
+
+<style>
+
+* {
+  position: relative;
+}
+.banner {
+  width: 80vw;
+  height: 30vh;
+  overflow: hidden;
+}
+.background {
+  filter: brightness(1);
+  min-width: 400px;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.tram-pic {
+  background-image: url("https://res.cloudinary.com/djd5xu1es/image/upload/c_scale,w_1200/v1607516207/eugene-zhyvchik-Xz_oL7OnCF4-unsplash_zelnao.jpg");
+}
+.foreground {
+  position: absolute;
+  padding: 25px;
+}
+.content {
+  padding: 50px;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  color: #333;
+  font-size: 10vw;
+}
+</style>
+
+<script>
+let banners = document.querySelectorAll(".banner");
+
+banners.forEach((element) => {
+  let background = element.querySelector(".background");
+  let headings = element.querySelectorAll("h1, h2");
+
+  let tl = gsap
+    .timeline()
+    .from(background, {
+      backgroundPosition: "60% 0%",
+      filter: "brightness(0.1)",
+      duration: 1
+    })
+    .from(headings, { y: 200, stagger: 0.1 }, 0);
+
+  ScrollTrigger.create({
+    trigger: element,
+    start: "top 90%",
+    toggleActions: "play none none reverse",
+    animation: tl
+  });
+});
+</script>
