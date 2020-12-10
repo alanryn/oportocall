@@ -1,7 +1,7 @@
 <nav aria-label="Main Navigation">
 {% set navPages = collections.all | eleventyNavigation %}
 
-<ul>
+<ul >
 {%- for entry in navPages -%}
 	{%- if entry.children.length -%}
 	<li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">{{ entry.title }}</span>
