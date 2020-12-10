@@ -4,26 +4,21 @@
 	--background: #FFF0EB;
 
 }
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 html,
 body {
-   
 	padding: 0;
 	margin: 0;
 	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
-
 body {
 	display: grid;
 	height: 100vh;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--secondary);
 }
-
 main {
 	max-width: 60em;
 	margin: 0 auto;
@@ -130,9 +125,9 @@ form {
 input,
 textarea,
 button {
-  width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
+        width: 100%;
+	padding: 1em;
+	margin-bottom: 1em;
 	font-size: 1rem;
 	font-family: "Avenir", "Avenir Next", sans-serif;
 }
