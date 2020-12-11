@@ -20,7 +20,7 @@
 <script>
 gsap.registerPlugin(ScrollTrigger);
 
-const locoScroll = new LocomotiveScroll({
+ const locoScroll = new LocomotiveScroll({
   el: document.querySelector(".smooth-scroll"),
   smooth: true
 });
@@ -65,22 +65,25 @@ banners.forEach((element) => {
 
   ScrollTrigger.create({
     trigger: element,
-        scroller: ".smooth-scroll",
+    scroller: ".smooth-scroll",
     start: "top 90%",
     toggleActions: "play none none reverse",
     animation: tl
   });
 });
-
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
-
+/*
 const animationEnter = (container) => {
+
   return gsap.from(container, { autoAlpha: 0, duration: 2, clearProps:"all", ease:"none" });
+  
 }
 const animationLeave = (container) => {
   return gsap.to(container, { autoAlpha: 0, duration: 2, clearProps:"all", ease:"none"  });
+      		
 }
+
 barba.init({
   transitions: [
   	{
@@ -88,12 +91,13 @@ barba.init({
     			animationEnter(next.container);
     		},
     		leave:({current}) => animationLeave(current.container),
-    		
     		enter({next}){
-    			console.log("entering");
+    			
     			animationEnter(next.container);
     		}
   	}
   ]
 })
+
+*/
 </script>
