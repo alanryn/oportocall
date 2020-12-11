@@ -11,6 +11,7 @@
      <script src="https://cdn.snipcart.com/themes/v3.0.8/default/snipcart.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
      <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +24,9 @@
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}
-    {% include "assets/js/inline.js" %}
+    
+     {% include "assets/js/inline.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
+
 </head>
