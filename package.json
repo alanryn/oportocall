@@ -3,7 +3,7 @@
   "version": "1.0.3",
   "description": "Porto Relocation Services",
   "scripts": {
-    "build": "npx eleventy",
+    "build": "eleventy",
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
