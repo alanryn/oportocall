@@ -1,22 +1,13 @@
 <nav aria-label="Main Navigation">
 {% set navPages = collections.all | eleventyNavigation %}
 
-<ul >
+<ul>
 {%- for entry in navPages -%}
-	{%- if entry.children.length -%}
-	<li class="dropdown"><span tabindex="-1" class="dropdown__title" id="dropdown-title">{{ entry.title }}</span>
-		  <ul class="dropdown__menu" aria-labelledby="dropdown-title">
-			  <li style="text-align:center">
-			    {%- for child in entry.children %}<a href="{{ child.url | url }}">{{ child.title }}</a>{% endfor -%}
-			  </li>
-		  </ul>
-  	</li>
-   {%- else -%}
-		 <li class="dropdown">
+
+		 <li>
 		  <a href="{{ entry.url | url }}">{{ entry.title }}</a>
 		 </li>
 
-	{%- endif -%}
 {%- endfor -%}
 </ul>
 
