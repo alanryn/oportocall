@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "@11ty/eleventy"
+  command = "eleventy"
 
 # REDIRECT and HEADERS examples
 
