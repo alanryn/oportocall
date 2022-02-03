@@ -7,4 +7,4 @@ tags:
 - traditional crafts
 ---
 
-Saber Fazer is an initiative devoted to Craftsmanship and artisan production techniques in Portugal. Source: [Saber Fazer](http://www.saberfazer.org/)
+[Saber Fazer](http://www.saberfazer.org/) is an initiative devoted to traditional crafts and artisan production techniques in Portugal.

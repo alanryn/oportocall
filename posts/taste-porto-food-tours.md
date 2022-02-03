@@ -6,4 +6,4 @@ tags:
 - Itineraries/Tours
 ---
 
-Food tours of Porto Source: [Taste Porto Food Tours](https://www.tasteportofoodtours.com/)
+The Oldest Food Tour in Porto: [Taste Porto Food Tours](https://tasteporto.com/)

@@ -8,4 +8,4 @@ tags:
   - Social Security
 ---
 
-Tips and resources for independent workers in Portugal [Luscofia](https://www.luscofia.com/)
+Tips and resources for independent workers in Portugal &#8212; [Luscofia](https://www.luscofia.com/)
