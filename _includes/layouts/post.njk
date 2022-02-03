@@ -2,27 +2,24 @@
 layout: layouts/base.njk
 section: post
 ---
-
-<article>
+<article style="min-height: 53vh; line-height: 1.6em; font-size: 1.3em;">
 <h1>{{ title }}</h1>
 
-
-
+<p>
   {{ layoutContent | safe }}
+</p>
 
   {% if tags %}
     <p>
     {% for tag in tags %}
       {%- if tag != "post" -%}
         {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
+        <a class="clay" href="{{ tagUrl | url }}" rel="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}
     </p>
   {% endif %}
-
 </article>
-
 <nav>
   <a href="{{ '/blog/' | url }}">← Back to blog list</a>
 </nav>

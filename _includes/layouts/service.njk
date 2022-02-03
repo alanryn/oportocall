@@ -2,14 +2,13 @@
 layout: layouts/base.njk
 section: post
 ---
-
-<article>
+<article style="min-height: 53vh; line-height: 1.6em; font-size: 1.3em;">
   <h1>{{ title }}</h1>
-
-
-  {{ layoutContent | safe }}
-
-  <button class="snipcart-add-item button" 
+  <p>
+   {{ layoutContent | safe }}
+  </p>
+ 
+  <button class="snipcart-add-item button clay" 
           data-item-id="11ty-{{page.fileSlug}}"
           data-item-name="{{ title }}" 
           data-item-price="{{ price }}"
@@ -18,9 +17,7 @@ section: post
           data-item-description="{{ service.data.body }}">
           Add to cart
   </button>
-
 </article>
-
 <nav>
   <a href="{{ '/services/' | url }}">← Back to service list</a>
 </nav>
