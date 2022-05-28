@@ -1,12 +1,11 @@
 <h1>Services</h1>
-<div class="card-wrapper">
+<div class="">
 	{% for service in servicelist | reverse %}
 
 		<div style="text-align:center;"
 		 class="clay" {% if service.url == url %} data-current="current item"{% endif %}>
 			<a style="text-decoration: none;" href="{{ service.url | url }}">
-				<h3 style="padding: 2rem; color: white;">{{ service.data.title }}</h3>	
-				<h4 style="padding: 2rem; color: white;">{{ service.data.summary }}</h4>	
+				<h3 style="padding: 2rem; color: white;">{{ service.data.title }} - {{ service.data.summary }}</h3>	
 			</a>
 		</div>
 		
