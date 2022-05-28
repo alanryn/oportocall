@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/al1973/oportocall"
+    "url": "https://github.com/alanryn/oportocall"
   },
   "author": {
     "name": "Alan Ryan",
@@ -19,9 +19,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/al1973/oportocall"
+    "url": "https://github.com/alanryn/oportocall"
   },
-  "homepage": "https://github.com/al1973/oportocall",
+  "homepage": "https://github.com/alanryn/oportocall",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "luxon": "^1.25.0",
