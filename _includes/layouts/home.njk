@@ -44,7 +44,7 @@ section: home
 </div>
 
 <div class="banner">
-  <div class="background tram-pic"></div>
+  <div class="background tiles-pic"></div>
   <div class="foreground">
     <h1 style="font-family: 'Open Sans Condensed', sans-serif; color:white;">Relocating?</h1>
   </div>
@@ -72,7 +72,7 @@ section: home
 </div>
 
 <div class="banner">
-  <div class="background tram-pic"></div>
+  <div class="background tile-mix"></div>
   <div class="foreground">
     <h1 style="font-family: 'Open Sans Condensed', sans-serif; color:white;">Planning a visit?</h1>
   </div>
@@ -118,7 +118,14 @@ section: home
   position: absolute;
 }
 .tram-pic {
-  background-image: url("https://res.cloudinary.com/djd5xu1es/image/upload/c_scale,w_1200/v1607516207/eugene-zhyvchik-Xz_oL7OnCF4-unsplash_zelnao.jpg");
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("https://res.cloudinary.com/djd5xu1es/image/upload/c_scale,w_1200/v1607516207/eugene-zhyvchik-Xz_oL7OnCF4-unsplash_zelnao.jpg");
+}
+
+.tiles-pic {
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/djd5xu1es/image/upload/v1607618470/azulejos_t3nq7n.jpg');
+}
+.tile-mix{
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/djd5xu1es/image/upload/v1653850493/portuguese-pattern-vector-pack_udz7ps.jpg')
 }
 .foreground {
   position: absolute;
@@ -130,7 +137,7 @@ section: home
   font-size: 1.3em;
 }
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/djd5xu1es/image/upload/c_scale,w_1500/v1607618470/azulejos_t3nq7n.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://res.cloudinary.com/djd5xu1es/image/upload/v1653850493/portuguese-pattern-vector-pack_udz7ps.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
