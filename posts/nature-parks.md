@@ -2,20 +2,6 @@
 title: "Nature & Parks"
 date: 2020-02-03
 tags:
-  - BIORIA
-  - cycling
-  - Estarreja
-  - Nature
-  - Portugal
-  - Ria de Aveiro
-  - Rio Antuã
-  - Rio Jardim
-  - Rio Vouga
-  - Salreu
-  - Travel
-  - walking
-  - wetland
-  - lagoon
 ---
 
 1. [BIORIA](http://www.bioria.com/) - A network of wetland walks

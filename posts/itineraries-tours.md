@@ -1,14 +1,6 @@
 ---
 title: "Itineraries & Tours"
 tags:
-  - Architecture/Patrimony
-  - Itineraries/Tours
-  - Porto
-  - Walking Tours
-  - Food Tours
-  - Nature
-  - Rota das Árvores do Porto
-  - Tree Tours of Porto
 ---
 
 1. [The Worst Tours](http://theworsttours.weebly.com/)
