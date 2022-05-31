@@ -3,8 +3,8 @@ title: "Artisan"
 tags:
 ---
 
-1. [Saber Fazer](http://www.saberfazer.org/) is an initiative devoted to traditional crafts and artisan production techniques in Portugal.
-2. [Atelier Joaquim Pombal](http://joaquimpombal.blogspot.com/p/quem-somos.html), a ceramic artist producing traditional hand-painted Portuguese tiles (azulejos).
-3. [O Mar na Lata](www.omarnalata.pt) is a shop for canned fish products, located in the fishing port of Porto, Matosinhos.
-4. [LenhoLento - fine carpentry cooperative](https://www.facebook.com/Lenholento-337040839658433/).
-5. [Salt of Portugal](http://saltofportugal.com/)
+- [Saber Fazer](http://www.saberfazer.org/) &#8212; an initiative devoted to traditional crafts and artisan production techniques in Portugal.
+- [Atelier Joaquim Pombal](http://joaquimpombal.blogspot.com/p/quem-somos.html), &#8212; ceramic artist producing traditional hand-painted Portuguese tiles (azulejos).
+- [O Mar na Lata](www.omarnalata.pt) &#8212; a shop for canned fish products, located in the fishing port of Matosinhos.
+- [LenhoLento](https://www.facebook.com/Lenholento-337040839658433/) &#8212; carpentry cooperative.
+- [Salt of Portugal](http://saltofportugal.com/) &#8212; blog on places, food, wine, culture...

@@ -4,6 +4,7 @@
   --background: #edf2f4;
   --four: #ef233c;
   --five: #d90429;
+  --links: #3740ff;
   --clay-background: #a6a9cb;
   --clay-border-radius: 0.5rem;
 }
@@ -40,7 +41,7 @@ code {
 
 a[href],
 a[href]:visited {
-  color: var(--primary);
+  color: var(--links);
 }
 
 a[href]:not(:hover) {
@@ -211,7 +212,7 @@ ul {
 }
 ul li {
   font-size: 1.25rem;
-  line-height: 2;
+  line-height: 1.5;
   text-decoration: none;
 }
 ul li::before {
