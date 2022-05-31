@@ -2,15 +2,14 @@
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 	{% include "components/head.njk" %}
 	<body data-barba="wrapper">
-  <div  class="smooth-scroll">
+  <div class="smooth-scroll">
 		<header>
-			<h1 style="font-family: 'Open Sans Condensed', sans-serif; margin: 0 1rem; 
-">
+			<h1 style="font-family: 'Open Sans Condensed', sans-serif; margin: 0 1rem;">
 				<a class= "gradient-text" href="{{ '/' | url }}">Porto Relocation Services</a>
 			</h1>
 			{% include "components/nav.njk" %}
 		</header>
-		<main data-barba="container" data-barba-namespace="home">				
+		<main>				
 			{{ layoutContent | safe }}
 		</main>	
 			{% include "components/footer.njk" %}
@@ -74,30 +73,5 @@ banners.forEach((element) => {
 });
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 ScrollTrigger.refresh();
-
-const animationEnter = (container) => {
-
-  return gsap.from(container, { autoAlpha: 0, duration: 1, clearProps:"all", ease:"none" });
-  
-}
-const animationLeave = (container) => {
-  return gsap.to(container, { autoAlpha: 0, duration: 1, clearProps:"all", ease:"none"  });
-      		
-}
-
-barba.init({
-  transitions: [
-  	{
-    		once({next}){
-    			animationEnter(next.container);
-    		},
-    		leave:({current}) => animationLeave(current.container),
-    		enter({next}){
-    			
-    			animationEnter(next.container);
-    		}
-  	}
-  ]
-}) 
 
 </script>
