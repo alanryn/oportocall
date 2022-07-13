@@ -7,5 +7,3 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-
-
